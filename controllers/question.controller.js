@@ -405,6 +405,7 @@ const submitTest = async (req, res, next) => {
   const answers = req.body;
   try {
     const score = await calculateScore(answers);
+    console.log(score)
     await updateStudent(req.user.student_id, { score: score });
 
     res.send({
