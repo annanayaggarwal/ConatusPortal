@@ -317,7 +317,7 @@ const fetchAllQuestions = async (req, res, next) => {
       merged = merged.concat(random);
       random = getRandom(htmlcss, 10);
       merged = merged.concat(random);
-      random = getRandom(apti, 7);
+      random = getRandom(apti, 2);
       merged = merged.concat(random);
       res.send(merged);
     }
@@ -328,7 +328,7 @@ const fetchAllQuestions = async (req, res, next) => {
       });
     }
 
-    res.json({ questions });
+    // res.json({ questions });
     // questions = []
   } catch (e) {
     console.log(e);
