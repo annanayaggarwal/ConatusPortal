@@ -11,7 +11,7 @@ const studentSchema = new mongoose.Schema({
     },
     branch:{
         type:String,
-        enum:['CSE','CS','CSE(ML/AI)','CSE(DS)','CS/IT','IT']
+        enum:['CSE','CS','CSE(AI/ML)','CSE(DS)','CS/IT','IT','AIML']
     },
     studentNumber: {
         type: Number,

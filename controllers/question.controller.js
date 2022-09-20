@@ -311,13 +311,13 @@ const fetchAllQuestions = async (req, res, next) => {
 
       let merged = [];
 
-      let random = getRandom(cques, 5);
+      let random = getRandom(cques, 10); //10
       merged = merged.concat(random);
-      random = getRandom(sqlques, 2);
+      random = getRandom(sqlques, 4);//4
       merged = merged.concat(random);
-      random = getRandom(htmlcss, 1);
+      random = getRandom(htmlcss, 10); // 10
       merged = merged.concat(random);
-      random = getRandom(apti, 2);
+      random = getRandom(apti, 6);//6
       merged = merged.concat(random);
       res.send(merged);
     }

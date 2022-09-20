@@ -20,7 +20,7 @@ const getStudentRegisterValidator = () => {
         check('studentNumber', 'validation:create:invalid studentNumber').isNumeric(),
         check('studentNumber', 'validation:create:invalid studentNumber').isLength({ min: 7 }),
         check('skills', 'validation:create:invalid skills').not().isEmpty(),
-        check('branch', 'validation:create:invalid branch').isIn(['CSE','CS','CSE(ML/AI)','CSE(DS)','CS/IT','IT'])
+        check('branch', 'validation:create:invalid branch').isIn(['CSE','CS','CSE(AI/ML)','CSE(DS)','CS/IT','IT','AIML'])
         // check('role', 'validation:create:invalid role').not().isEmpty(),
         // check('role', 'validation:create:invalid role').isIn(['student', 'admin']),
     ];
