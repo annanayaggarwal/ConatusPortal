@@ -315,7 +315,7 @@ const fetchAllQuestions = async (req, res, next) => {
       merged = merged.concat(random);
       random = getRandom(sqlques, 2);
       merged = merged.concat(random);
-      random = getRandom(htmlcss, 10);
+      random = getRandom(htmlcss, 1);
       merged = merged.concat(random);
       random = getRandom(apti, 2);
       merged = merged.concat(random);
