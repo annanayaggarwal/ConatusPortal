@@ -40,7 +40,6 @@ const calculateScore = async(answers) => {
         const question = await findQuestionById(answer.question);
         if (answer.answer !== null) {
             if (question.correctAnswer === answer.answer) score += 4;
-            else score--;
         }
     }
     return score;
